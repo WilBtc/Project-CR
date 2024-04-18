@@ -1,0 +1,112 @@
+/* main.css */
+/* General reset and box-sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif; /* Use a web-safe font or include a link to a Google Font */
+  color: #333;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+/* Header styles */
+.header {
+  background-color: #005792;
+  color: #ffffff;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.header h1 {
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1.2em;
+}
+
+/* Navigation styles */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Section styles */
+.section {
+  background: white;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+  color: #005792;
+  margin-bottom: 10px;
+}
+
+/* Call to Action styles */
+.call-to-action {
+  text-align: center;
+  padding: 20px;
+  background: #007BFF;
+  color: #ffffff;
+  margin: 30px 0;
+}
+
+.call-to-action button {
+  background-color: #ffc107;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.call-to-action button:hover {
+  background-color: #e0a800;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .header,
+  .footer,
+  .section,
+  .call-to-action {
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .call-to-action button {
+    width: 100%;
+  }
+}
